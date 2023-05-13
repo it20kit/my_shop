@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Отсутствие товара{% endblock %}
+
+{% block main %}
+    <ul>
+    {% for message in app.flashes('notice') %}
+        <p style="color: #CE272D">{{ message }}</p>
+    {% endfor %}
+    <a href="{{ path('app_menu_product') }}" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-1">Назад</a>
+    </ul>
+{% endblock %}

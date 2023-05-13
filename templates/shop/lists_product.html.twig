@@ -1,0 +1,14 @@
+    <div class="u-container-layout u-container-layout-3">
+        <div class="u-container-style u-group u-palette-1-base u-group-4">
+            <ul>
+                {% for  product in products %}
+                    <div class="u-container-layout">
+                        <img class="u-expanded-width u-image u-image-default u-preserve-proportions u-image-1" src="{{ asset(product.image) }}" alt="" data-image-width="180" data-image-height="120">
+                        <a href="http://127.0.0.1:8000/basket/add/{{ product.id }}">{{ product.title }}</a>
+                        <p>Количество {{ product.quantity}}</p>
+                    </div>
+                {% endfor %}
+                {{ knp_pagination_render(products) }}
+            </ul>
+        </div>
+    </div>

@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Меню удаления{% endblock %}
+
+{% block main %}
+    <ul>
+        <a href="{{ path('app_delete_by_id') }}" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-1">Удалить по id</a>
+        <a href="{{ path('app_delete_product_by_name') }}" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-1">Удалить по названию</a>
+        <a href="{{ path('app_all_list_product') }}" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-1">посмотреть весь список товаров</a>
+        <a href="{{ path('app_admin') }}" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-1">назад</a>
+    </ul>
+{% endblock %}

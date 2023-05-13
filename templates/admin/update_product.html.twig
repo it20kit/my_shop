@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Изменить продукт{% endblock %}
+
+{% block main %}
+    <ul>
+        <p>Продукт</p>
+        <table border="1" width="100%" >
+            <tr>
+                <th width="25%" >Название</th>
+                <th width="15%" >Цена</th>
+                <th width="20%" >Вес</th>
+                <th width="20%" >Описание</th>
+                <th width="20%" >Количество</th>
+            </tr>
+            <tr>
+                <th width="25%" >{{ product.title }}</th>
+                <th width="15%" >{{ product.price }}</th>
+                <th width="20%" >{{ product.weight }}</th>
+                <th width="20%" >{{ product.description }}</th>
+                <th width="20%" >{{ product.quantity }}</th>
+            </tr>
+        </table>
+    {{ include('common-templates/form_serch_by_title.html.twig') }}
+        <a href="{{ path('app_admin') }}" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-1">назад</a>
+    </ul>
+{% endblock %}

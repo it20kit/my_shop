@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Админ{% endblock %}
+
+{% block main %}
+    <ul>
+        <a href="{{ path('app_add_product') }}" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-1">Добавить Товар</a>
+        <a href="{{ path('app_find_product_by_id') }}" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-1">Изменить Товар</a>
+        <a href="{{ path('app_delete_menu') }}" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-1">Удалить товар</a>
+    </ul>
+{% endblock %}

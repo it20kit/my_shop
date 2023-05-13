@@ -1,0 +1,23 @@
+    <p>Список всех товаров</p>
+    <table border="1" width="100%" >
+        <tr>
+            <th width="10%" >id</th>
+            <th width="20%" >название</th>
+            <th width="15%" >цена</th>
+            <th width="15%" >вес</th>
+            <th width="30%" >описание</th>
+            <th width="20%" >количество</th>
+        </tr>
+    </table>
+    {% for product in list %}
+        <table border="1" width="100%" >
+            <tr>
+                <th width="10%" >{{ product.id }}</th>
+                <th width="20%" >{{ product.title }}</th>
+                <th width="15%" >{{ product.price }}</th>
+                <th width="15%" >{{ product.weight }}</th>
+                <th width="30%" >{{ product.description}}</th>
+                <th width="20%">{{ product.quantity}}</th>
+            </tr>
+        </table>
+    {% endfor %}

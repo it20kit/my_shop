@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Меню корзины{% endblock %}
+
+{% block main %}
+    <ul>
+        <a href="{{ path('basket_product_list') }}" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-1">Посмотреть товары</a>
+        <a href="{{ path('app_find_product_in_basket') }}" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-1">Удалить товар с корзины</a>
+    </ul>
+{% endblock %}

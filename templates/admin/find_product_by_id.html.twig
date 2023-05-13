@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Поиск товара по id{% endblock %}
+
+{% block main %}
+    <ul>
+    {{ include('common-templates/form_serch_by_title.html.twig') }}
+        <a href="{{ path('app_admin') }}" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-1">назад</a>
+    </ul>
+{% endblock %}

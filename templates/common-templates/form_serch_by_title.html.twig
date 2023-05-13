@@ -1,0 +1,7 @@
+    <h5>{{ heading }}</h5>
+    {{ form_start(form)}}
+    {{ form_end(form) }}
+    <br>
+    {% for message in app.flashes('notice') %}
+        <p style="color: #CE272D">{{ message }}</p>
+    {% endfor %}

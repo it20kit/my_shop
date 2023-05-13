@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Меню{% endblock %}
+
+{% block main %}
+    <ul>
+        <a href="{{ path('app_list_drinks') }}" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-1">Напитки</a>
+        <a href="{{ path('app_list_soup') }}" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-1">Супы</a>
+        <a href="{{ path('app_list_snacks') }}" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-1">Закуски</a>
+    </ul>
+{% endblock %}
